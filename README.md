@@ -17,6 +17,7 @@ npx create-gatsby-web
 cd <your-project-name>
 npm run develop/ yarn develop
 ```
+
 If you've previously installed `create-gatsby-web` globally via `npm install -g create-gatsby-web`, we recommend you uninstall the package using `npm uninstall -g create-gatsby-web` to ensure that npx always uses the latest version.
 
 _([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
@@ -66,6 +67,7 @@ _([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7
 It will generate the the initial project structure inside the current folder.<br>
 
 ## Template structure
+
 ```
 ├── .circleci
 │   └── config.yml
@@ -139,37 +141,37 @@ It will generate the the initial project structure inside the current folder.<br
 
 8.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-8.  **`.huskyrc.json`**: Husky configuration file. Already setup with a pre git commit hooks.
+9.  **`.huskyrc.json`**: Husky configuration file. Already setup with a pre git commit hooks.
 
-9.  **`.lintstagedrc.json`**: Lint-staged configuration file. Already setup to auto lint and format code before commit.
+10. **`.lintstagedrc.json`**: Lint-staged configuration file. Already setup to auto lint and format code before commit.
 
-10.  **`.prettierignore`**: This file tells prettier which files it should not track.
+11. **`.prettierignore`**: This file tells prettier which files it should not track.
 
-11.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+12. **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
-12.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+13. **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
-13.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail). SEO component already preconfigure, only production deployment will get index by Google bots all preview and staging will have **noindex** meta tag. 
+14. **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail). SEO component already preconfigure, only production deployment will get index by Google bots all preview and staging will have **noindex** meta tag.
 
-14. **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+15. **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-15. **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering. Preconfigured to convert stylesheet inline to link, preventing too long head which prevent Facebook, Twitter ... scraping data.
+16. **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering. Preconfigured to convert stylesheet inline to link, preventing too long head which prevent Facebook, Twitter ... scraping data.
 
-16. **`jest-preprocess.js`**: This file contains babel options to build gatsby project for Jest testing
+17. **`jest-preprocess.js`**: This file contains babel options to build gatsby project for Jest testing
 
-17. **`jest.config.js`**: This file contains all of Jest configurations.
+18. **`jest.config.js`**: This file contains all of Jest configurations.
 
-18. **`LICENSE`**: This boilerplate is licensed under the MIT license.
+19. **`LICENSE`**: This boilerplate is licensed under the MIT license.
 
-19. **`loadershim.js`**: This files contains loader setting for Jest.
+20. **`loadershim.js`**: This files contains loader setting for Jest.
 
-20. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+21. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-21. **`README.md`**: A text file containing useful reference information about your project.
+22. **`README.md`**: A text file containing useful reference information about your project.
 
-22. **`tsconfig.json`**: This file contains all of typescript configurations for type checking.
+23. **`tsconfig.json`**: This file contains all of typescript configurations for type checking.
 
-23. **`yarn.lock/package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+24. **`yarn.lock/package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
 All configurations are exposed and predefined folder structures, just write codes, no need to config<br>
 Once the installation is done, you can start develop right away!
@@ -210,29 +212,32 @@ Runs the test watcher in an interactive mode.<br>
 
 ## User Guide
 
-### CLI 
+### CLI
+
 <p align='center'>
 <img src='https://raw.githubusercontent.com/tripheo0412/create-gatsby-web/master/assets/images/help-menu.png' width='600' alt='Help Menu'>
 </p>
 
 ### Setup CI CD
+
 **Video tutorial**
 In-progress
 
 **Prerequisites**
-- Github/CircleCI/Netlify account, we only need free version!
-- Github [personal access token](https://github.com/settings/tokens) for CircleCI reporting deployment to Pull Request and Github Deployment, note down the token as ```GITHUB_DEPLOYMENTS_TOKEN=<the-token>```.
-- Netlify **development** [personal access token](https://app.netlify.com/user/applications?&_ga=2.114107908.208815282.1582632982-167014225.1582120451#personal-access-tokens) for CircleCI to deploy preview and staging (this one belongs to Dev team Netlify's account). Note down the token as ```NETLIFY_ACCESS_TOKEN=<the-token>```. This is your staging website.
-- Netlify **production** [personal access token](https://app.netlify.com/user/applications?&_ga=2.114107908.208815282.1582632982-167014225.1582120451#personal-access-tokens) for CircleCI to deploy production (this one belongs to Client Netlify's account - if you owned the project then development access token is enough). Note down the token as ```NETLIFY_CLIENT_ACCESS_TOKEN=<the-token>```. This is your production website.
 
+- Github/CircleCI/Netlify account, we only need free version!
+- Github [personal access token](https://github.com/settings/tokens) for CircleCI reporting deployment to Pull Request and Github Deployment, note down the token as `GITHUB_DEPLOYMENTS_TOKEN=<the-token>`.
+- Netlify **development** [personal access token](https://app.netlify.com/user/applications?&_ga=2.114107908.208815282.1582632982-167014225.1582120451#personal-access-tokens) for CircleCI to deploy preview and staging (this one belongs to Dev team Netlify's account). Note down the token as `NETLIFY_ACCESS_TOKEN=<the-token>`. This is your staging website.
+- Netlify **production** [personal access token](https://app.netlify.com/user/applications?&_ga=2.114107908.208815282.1582632982-167014225.1582120451#personal-access-tokens) for CircleCI to deploy production (this one belongs to Client Netlify's account - if you owned the project then development access token is enough). Note down the token as `NETLIFY_CLIENT_ACCESS_TOKEN=<the-token>`. This is your production website.
 
 **How to**
+
 - Upload project to Github's repo, if you want to use CircleCI for free, Github's repo must be **public**.
-- Run ```yarn build/ npm run build```, you will get Gatsby built **public** folder in the root directory.
-- Run ```yarn build-storybook/ npm run build-storybook```, you will get Storybook built **build-storybook** folder in the root directory.
-- Login to **Dev team** Netlify, upload the **public** folder via the image below **(DO NOT USE new site from GIT)**, after upload you should get new project deployment in Netlify, click on it and go to site settings, note down the API ID as ```NETLIFY_SITE_ID_STAGING=<the-API-ID >```.
-- Still in **Dev team** Netlify, upload the **build-storybook** folder via the image below **(DO NOT USE new site from GIT)**, after upload you should get storybook deployment in Netlify, click on it and go to site settings, note down the API ID as ```NETLIFY_SITE_ID_STORYBOOK=<the-API-ID >```.
-- Login to **Client** Netlify, upload the **public** folder via the image below **(DO NOT USE new site from GIT)**, after upload you should get new project deployment in Netlify, click on it and go to site settings, note down the API ID as ```NETLIFY_SITE_ID_RELEASE=<the-API-ID >```.
+- Run `yarn build/ npm run build`, you will get Gatsby built **public** folder in the root directory.
+- Run `yarn build-storybook/ npm run build-storybook`, you will get Storybook built **build-storybook** folder in the root directory.
+- Login to **Dev team** Netlify, upload the **public** folder via the image below **(DO NOT USE new site from GIT)**, after upload you should get new project deployment in Netlify, click on it and go to site settings, note down the API ID as `NETLIFY_SITE_ID_STAGING=<the-API-ID >`.
+- Still in **Dev team** Netlify, upload the **build-storybook** folder via the image below **(DO NOT USE new site from GIT)**, after upload you should get storybook deployment in Netlify, click on it and go to site settings, note down the API ID as `NETLIFY_SITE_ID_STORYBOOK=<the-API-ID >`.
+- Login to **Client** Netlify, upload the **public** folder via the image below **(DO NOT USE new site from GIT)**, after upload you should get new project deployment in Netlify, click on it and go to site settings, note down the API ID as `NETLIFY_SITE_ID_RELEASE=<the-API-ID >`.
 
 <p align='center'>
 <img src='https://raw.githubusercontent.com/tripheo0412/create-gatsby-web/master/assets/images/netlify-upload.png' width='600' alt='Netlify Upload'>
@@ -248,13 +253,15 @@ In-progress
 - Voila! Pat your back because you have done a great job 👏
 
 ### Setup CMS webhook
+
 **Video tutorial**
 In-progress
 
 **Prerequisites**
-- CircleCI [personal access token](https://circleci.com/docs/2.0/managing-api-tokens/) for CMS to call CircleCi webhooks. Note down the token as ```CIRCLE-TOKEN=<the-token>```.
+
+- CircleCI [personal access token](https://circleci.com/docs/2.0/managing-api-tokens/) for CMS to call CircleCi webhooks. Note down the token as `CIRCLE-TOKEN=<the-token>`.
 - CMS account, recommended [Contentful](https://www.contentful.com/)
-- Connection keys from CMS, if you use Contentful, click on settings -> API keys -> Content delivery/preview tokens -> Add API key. Note down as: 
+- Connection keys from CMS, if you use Contentful, click on settings -> API keys -> Content delivery/preview tokens -> Add API key. Note down as:
 
 ```
 CONTENTFUL_SPACE_ID=<the-Space-ID>
@@ -264,13 +271,17 @@ CONTENTFUL_ACCESS_TOKEN=<the-Content-Delivery-API-access token>
 **How to** (example with Contentful - similar to other CMS)
 
 1. **Setup Contentful**
+
 - Create a **.env** in project root directory, put this in the .env file:
+
 ```
 CONTENTFUL_SPACE_ID=<the-Space-ID>
 CONTENTFUL_ACCESS_TOKEN=<the-Content-Delivery-API-access token>
 ```
-- Run ```yarn add gatsby-source-contentful / npm install --save gatsby-source-contentful```
+
+- Run `yarn add gatsby-source-contentful / npm install --save gatsby-source-contentful`
 - Navigate to **gatsby-config**, uncomment the block of code:
+
 ```
 /***** REMOVE COMMENT TO ENABLE CONTENTFUL CMS
 {
@@ -282,18 +293,21 @@ CONTENTFUL_ACCESS_TOKEN=<the-Content-Delivery-API-access token>
 	},
 ******/
 ```
+
 - Login to CircleCI, main dashboard -> jobs -> click on the setting of your project -> environment variable -> add variable. Then add your CONTENTFUL_SPACE_ID and CONTENTFUL_ACCESS_TOKEN.
 
 2. **Setup webhook**
 
-__Webhook for staging website__
+**Webhook for staging website**
+
 - Login to Contentful, settings -> webhooks -> add webhooks
-- Details -> name ```Trigger CircleCi Build Develop Branch```
-- Details -> URL -> POST -> ```https://circleci.com/api/v2/project/github/<org-name-or-your-account-name>/<repo-name>/pipeline```
+- Details -> name `Trigger CircleCi Build Develop Branch`
+- Details -> URL -> POST -> `https://circleci.com/api/v2/project/github/<org-name-or-your-account-name>/<repo-name>/pipeline`
 - Triggers -> Select specific triggering events -> tick all Publish + Unpublish
-- Headers -> add custom header -> Name: ```Circle-Token``` -> Value: ```<the-token-value>```
+- Headers -> add custom header -> Name: `Circle-Token` -> Value: `<the-token-value>`
 - Content type -> application/json
 - Payload -> Customize the webhook payload:
+
 ```
 {
   "branch": "develop",
@@ -303,16 +317,19 @@ __Webhook for staging website__
   }
 }
 ```
+
 - Click save, voila! you got the **staging** webhook setup. Everytime there is change in contentful, the webhook will trigger CircleCI to run the pipeline and deploy the new content.
 
-__Webhook for production website__
+**Webhook for production website**
+
 - Login to Contentful, settings -> webhooks -> add webhooks
-- Details -> name ```Trigger CircleCi Build Master Branch```
-- Details -> URL -> POST -> ```https://circleci.com/api/v2/project/github/<org-name-or-your-account-name>/<repo-name>/pipeline```
+- Details -> name `Trigger CircleCi Build Master Branch`
+- Details -> URL -> POST -> `https://circleci.com/api/v2/project/github/<org-name-or-your-account-name>/<repo-name>/pipeline`
 - Triggers -> Select specific triggering events -> tick all Publish + Unpublish
-- Headers -> add custom header -> Name: ```Circle-Token``` -> Value: ```<the-token-value>```
+- Headers -> add custom header -> Name: `Circle-Token` -> Value: `<the-token-value>`
 - Content type -> application/json
 - Payload -> Customize the webhook payload:
+
 ```
 {
   "branch": "master",
@@ -322,8 +339,8 @@ __Webhook for production website__
   }
 }
 ```
-- Click save, voila! you got the **production** webhook setup. Everytime there is change in contentful, the webhook will trigger CircleCI to run the pipeline and deploy the new content.
 
+- Click save, voila! you got the **production** webhook setup. Everytime there is change in contentful, the webhook will trigger CircleCI to run the pipeline and deploy the new content.
 
 ## Philosophy
 
@@ -349,7 +366,7 @@ Your environment will have everything you need to build a modern Gatsby web:
 - ✅ A live development server that warns about common mistakes.
 - 🕵️‍♂️ A build script to bundle JS, CSS, and images for production, with hashes and sourcemaps.
 
-The tradeoff is that **these are a lot of configuration files**. But they are all pre-configured and we have a detail explaination [here](#template-structure) 
+The tradeoff is that **these are a lot of configuration files**. But they are all pre-configured and we have a detail explaination [here](#template-structure)
 
 ## Contributing
 
